@@ -1,0 +1,42 @@
+<div class="container"  [hidden]="isDisplay">
+    <div class="d-flex align-items-center">
+        <div class="col-2">
+
+        </div>
+        <div class="col-9" >
+           
+           
+    </div>
+</div>
+<div class="container">
+    <div class="row" >
+        <br/>
+        <br/>
+        <br/>
+        <div class="col-2" >
+           
+            <select [(ngModel)]="selectedLevel" (change)="selected()" (ngModelChange)="onEmployeeSelected($event)">
+                <option *ngFor="let item of productdata" [ngValue]="item">{{item}}</option>
+            </select>
+            </div>
+            <div *ngFor="let thing of mydata"  class="col-md-4"><br /><br />
+                <a class="custom-card" [routerLink]="['/thing/',thing.id]"  >
+                    <div class="card" style="width: 17rem; height: 32rem;">
+                        <img class="card-img-top" [src]="thing.image_link" height="320px" width="15px" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-text"
+                                style="font-family: Georgia, 'Times New Roman', Times, serif;text-align: center; font-weight: bolder; font-size: medium;">
+                                {{ thing.name}} {{thing.brand}}</h4>
+                            <h3 style="text-align: center;font-weight: bold;font-size: medium;">
+                                {{thing.price_sign}}{{thing.price}}</h3>
+                            <img src="data:image/png;base64,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"
+                                width="115px" height="45px" style="margin-left: 43px;" /><br /><br />
+                            <h3 style="text-align: center; opacity:0.7 ; font-size: medium;">5 shades</h3>
+                        </div>
+    
+                    </div>
+                </a>
+           
+        </div>
+    </div>
+</div>

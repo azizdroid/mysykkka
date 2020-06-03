@@ -1,0 +1,95 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEX6AJWfTKwXAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII="
+ width="1356px" height="34px"> 
+<div class="top-left">Get All Your Daily Essentials Right Here</div>
+
+<div class="top-right">Get App &nbsp; Order Now</div>
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a class="navbar-brand" href="#" style="font-style: oblique; font-family:  sans-serif; color: #Fc2779	; font-size: 22px;">Sykkaa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 15px;" >
+     
+      <ul class="navbar-nav mr-auto" >
+        <li class="nav-item active" >
+          
+          <div (mouseover)="hover=true" (mouseleave)="hover=false">
+
+
+          <a class="nav-link"  [routerLink]="['/home']" [class]="newclass" [ngStyle]="{color: hover==true  ? 'deeppink' : 'grey' }" style="    font-family: 'SourceSansPro-SemiBold', sans-serif;
+          ">HOME</a>
+        
+        </div>
+        </li>
+      
+        
+        <li class="nav-item">
+          <div (mouseover)="hover2=true" (mouseleave)="hover2=false">
+
+          <a class="nav-link" [routerLink]="['/categories']"  [ngStyle]="{color: hover2==true  ? 'deeppink' : 'grey' }">CATEGORIES</a>
+</div>
+
+       
+      
+            </li>
+        <li class="nav-item">
+          <div (mouseover)="hover3=true" (mouseleave)="hover3=false">
+
+          <a class="nav-link"  [routerLink]="['/brands']" (click)="child.togglefunction()" [ngStyle]="{color: hover3==true  ? 'deeppink' : 'grey' }">BRANDS</a>
+        </div>
+        </li>
+         <li class="nav-item">
+          <div (mouseover)="hover4=true" (mouseleave)="hover4=false">
+
+          <a class="nav-link"  [routerLink]="['/products']" [ngStyle]="{color: hover4==true  ? 'fuchsia' : 'grey' }">PRODUCTS</a>
+</div>
+        </li>
+  
+      </ul>
+  
+      <form class="form-inline my-md-8 my-lg-0" class="searchclass">
+       
+        
+         <div class="row">
+
+           
+          <input class="form-control" type="search" id="news" (input)="OnSearchChange($event.target.value)" name="something" placeholder="Search for Products,Brands,etc.." aria-label="Search" style="width: 270px;padding: 12px 20px 12px 40px;"> &nbsp; 
+          <button class="btn btn-outline my-2 my-sm-0" (click)="OnSearchChange($event.target.value)" type="submit">Search</button>
+</div>
+             
+</form>
+
+</div>
+</nav>
+
+
+<router-outlet></router-outlet>
+<app-categories [store]="store"></app-categories>
+<child #child ></child>
+
+
+ 
+
+    
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+

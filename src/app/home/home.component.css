@@ -1,0 +1,35 @@
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+}
+
+.centered {
+  position: absolute;
+  top: 74%;
+  left: 60%;
+  font-size: 100px;
+  transform: translate(-70%, -70%);
+  border-style: solid;
+  margin: auto;
+  width: 70%;
+
+  padding: 10px;
+  border-color: aliceblue;
+  font-family: 'SourceSansPro-SemiBold', sans-serif;
+  color: white;
+font-size: medium;    
+}
+@media (max-width: 800px){
+  .centered{
+  position: absolute;
+  top: 62%;
+  left: 12%;
+  margin-left:20px;
+  font-size:smaller;
+  transform: translate(-7%, -8%);}
+  #image{
+      margin-left:2px;
+        width:270px;
+       
+  }
+}

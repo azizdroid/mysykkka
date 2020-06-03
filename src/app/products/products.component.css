@@ -1,0 +1,28 @@
+.bs-example{
+    margin: 50px;    
+    margin-top: 20px;    
+}
+.card-title{
+    font-weight:bolder;
+    font-family:sans-serif;
+}
+.btn{
+    background-color: deeppink;
+    font-weight: bold;
+color: white;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+   word-spacing: 20px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot1{
+    height: 35px;
+    width: 35px;
+   background-color: deeppink;
+    border-radius: 50%;
+    display: inline-block; 
+  }
+ 

@@ -1,0 +1,38 @@
+<div class="bs-example" *ngIf="proid">
+  <div class="card" style="max-width: 1300px;">
+      <div class="row no-gutters">
+          <div class="col-md-5" style="background: #868e96;">
+              <img [src]="proid.image_link" class="card-img-top" height="550px" >
+          </div>
+          <div class="col-md-0">
+
+          </div>
+          <div class="col-md-7">
+              <div class="card-body">
+                  <h3 class="card-title">{{proid.brand}} - {{proid.name}}</h3>
+                 
+                  <h5 class="card-title">PRICE: {{proid.price_sign}}{{proid.price}}</h5>
+                  <p style="font-weight: bold;color:grey">(inclusive of all taxes)</p>
+                  <br/>
+                  <p class="card-text">DESCRIPTION: {{proid.description}}</p>
+                  <select >
+                      <option *ngFor="let c of proid.product_colors" [value]="c.colour_name">{{c.colour_name}}</option>
+                  </select>
+                  
+                 <br/>
+                  
+                 <br/>
+                  <div class="card">
+                      <div class="card-text">
+                         
+                          <h6 style="font-weight: bold;">SHADES AVAILABLE:</h6>
+                  <p class="dot" *ngFor="let c of proid.product_colors"   [ngStyle]="{'background-color' : c.hex_value } "></p>
+                </div>  
+                </div>
+                  <br/>
+                  <a [href]="proid.website_link" class="btn" >ADD TO BAG</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
